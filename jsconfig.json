@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "es6",
+    "jsx": "preserve",
+    "allowSyntheticDefaultImports": "true",
+    "allowNonTsExtensions": "true",
+    "allowJs": "true"
+  }
+}
