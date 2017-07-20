@@ -1,11 +1,16 @@
+import axios from 'axios';
+
 export default {
   login: () =>
-    Promise.resolve({
-      username: 'Jimmy23',
-      firstName: 'Jim',
-      lastName: 'John',
-      avatar: 'http://loremflickr.com/320/240/boy',
-    }),
-  getPhotos: () =>
-    Promise.resolve([]),
+    axios.get('http://www.example.com')
+    .then(res => {
+      console.log(res.data);
+      return {
+        username: 'Jimmy23',
+        firstName: 'Jim',
+        lastName: 'John',
+        avatar: 'http://loremflickr.com/320/240/boy'
+      };
+    })
+    .catch(err => console.log(err))
 };

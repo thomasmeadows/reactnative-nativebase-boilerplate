@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@expo/vector-icons": "^5.0.0",
+    "axios": "^0.16.2",
     "citibank-van": "0.0.1",
     "history": "^4.6.1",
     "native-base": "^2.2.1",
